@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Humayl Siddiqui - Professional Photography Portfolio | Media Leadership">
+    <title>Humayl Siddiqui | Photography Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">HS</a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-greeting fade-in">Hello, I'm</p>
+            <h1 class="hero-name fade-in">Humayl Siddiqui</h1>
+            <p class="hero-tagline fade-in">Photographer · Storyteller · Media Leader</p>
+            <p class="hero-sub fade-in">3 Years of Capturing Moments that Matter</p>
+            <div class="hero-buttons fade-in">
+                <a href="#portfolio" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-outline">Get in Touch</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Who I Am</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            <div class="about-grid">
+                <div class="about-image">
+                    <!-- PLACEHOLDER: Replace with your portrait photo -->
+                   <img src="images/portrait.jpg" alt="Humayl Siddiqui">
+                </div>
+                <div class="about-content">
+                    <h3>Passionate Photographer & Aspiring Media Leader</h3>
+                    <p>
+                        With over <strong>3 years of hands-on experience</strong> in photography, I specialize in capturing authentic moments — from campus events and portraits to creative storytelling through the lens. My work blends technical precision with artistic vision to create images that resonate.
+                    </p>
+                    <p>
+                        I am currently applying for the position of <strong>President of Media</strong> at my college. I believe strong visual communication is essential to amplifying student voices, documenting campus life, and building a vibrant media culture. Through leadership, collaboration, and creative direction, I aim to elevate our college’s media presence.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <span class="stat-number" data-target="3">0</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="250">0</span>
+                            <span class="stat-label">+ Clicks</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number" data-target="100">0</span>
+                            <span class="stat-label">% Passion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">My Work</span>
+                <h2 class="section-title">Selected Portfolio</h2>
+                <p class="section-desc">A glimpse into the stories I’ve captured over the past three years.</p>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="events">Events</button>
+                <button class="filter-btn" data-filter="portraits">Portraits</button>
+                <button class="filter-btn" data-filter="campus">Campus Life</button>
+                <button class="filter-btn" data-filter="creative">Creative</button>
+            </div>
+
+            <div class="portfolio-grid">
+                <!-- Image 1 -->
+                <div class="portfolio-item" data-category="events">
+                    <div class="portfolio-image">
+                        <!-- PLACEHOLDER: Replace src with your image path e.g. images/event-1.jpg -->
+                        <img src="images/event-1.jpg" alt="Campus Festival">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Tournament</h4>
+                        <p>Event Coverage</p>
+                    </div>
+                </div>
+
+                <!-- Image 2 -->
+                <div class="portfolio-item" data-category="portraits">
+                    <div class="portfolio-image">
+                        <img src="images/portrait-1.jpg" alt="Portrait 1">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Nature</h4>
+                        <p>Discovering Pakistan</p>
+                    </div>
+                </div>
+
+                <!-- Image 3 -->
+                <div class="portfolio-item" data-category="campus">
+                    <div class="portfolio-image">
+                        <img src="images/campus-1.jpg" alt="Campus 1">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>High Achievers Cermony</h4>
+                        <p>Campus Life</p>
+                    </div>
+                </div>
+
+                <!-- Image 4 -->
+                <div class="portfolio-item" data-category="creative">
+                    <div class="portfolio-image">
+                        <img src="images/creative-1.jpg" alt="Creative 1">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Light & Shadow</h4>
+                        <p>Creative</p>
+                    </div>
+                </div>
+
+                <!-- Image 5 -->
+                <div class="portfolio-item" data-category="events">
+                    <div class="portfolio-image">
+                        <img src="images/event-2.jpg" alt="Event 2">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Tournament</h4>
+                        <p>Event Coverage</p>
+                    </div>
+                </div>
+
+                <!-- Image 6 -->
+                <div class="portfolio-item" data-category="portraits">
+                    <div class="portfolio-image">
+                       <img src="images/portrait-2.jpg" alt="Portrait 2">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Mountains</h4>
+                        <p>Discovering Pakistan</p>
+                    </div>
+                </div>
+
+                <!-- Image 7 -->
+                <div class="portfolio-item" data-category="campus">
+                    <div class="portfolio-image">
+                        <<img src="images/campus-2.jpg" alt="Campus 2">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Farewell</h4>
+                        <p>Campus Life</p>
+                    </div>
+                </div>
+
+                <!-- Image 8 -->
+                <div class="portfolio-item" data-category="creative">
+                    <div class="portfolio-image">
+                        <img src="images/creative-2.jpg" alt="Creative 2">
+                    </div>
+                    <div class="portfolio-overlay">
+                        <h4>Abstract Moments</h4>
+                        <p>Creative</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Journey</span>
+                <h2 class="section-title">Experience & Skills</h2>
+            </div>
+            <div class="experience-grid">
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2026 – Present</span>
+                            <h4>Independent Photographer</h4>
+                            <p>Covering campus events, student portraits, and creative projects. Building a visual archive of college life and developing storytelling skills through photography.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2026 – 2025</span>
+                            <h4>Event & Media Contributor</h4>
+                            <p>Assisted in documenting college events, collaborating with student media teams, and learning the workflow of professional media production.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <span class="timeline-year">2024 – 2025</span>
+                            <h4>Photography Beginner → Practitioner</h4>
+                            <p>Started with personal projects and practice. Focused on composition, lighting, and post-processing fundamentals that form the foundation of my work today.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="skills">
+                    <h3>Core Skills</h3>
+                    <div class="skill-bars">
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>Photography & Composition</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>Event Coverage</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>Portrait Photography</span>
+                                <span>88%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>Photo Editing (Lightroom / Photoshop)</span>
+                                <span>98%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <div class="skill-info">
+                                <span>Visual Storytelling & Media Leadership</span>
+                                <span>94%</span>
+                            </div>
+                            <div class="skill-bar">
+                                <div class="skill-fill" data-width="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Media President Section -->
+    <section class="vision section">
+        <div class="container">
+            <div class="vision-card">
+                <span class="section-label">Vision</span>
+                <h2>Why I’m Applying for President of Media</h2>
+                <p>
+                    Media is more than content — it’s how a community sees itself and shares its story. 
+                    With three years of photographic experience and a deep understanding of visual narrative, 
+                    I want to lead a media team that documents campus life with excellence, amplifies student voices, 
+                    and creates a professional yet creative culture for every contributor.
+                </p>
+                <ul class="vision-points">
+                    <li>Build a consistent visual identity for college media</li>
+                    <li>Mentor juniors and grow collaborative media teams</li>
+                    <li>Cover events with speed, quality, and storytelling depth</li>
+                    <li>Strengthen social presence through impactful photography</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Let’s Connect</span>
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-desc">Open to collaborations, media opportunities, and conversations about visual storytelling.</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">✉</div>
+                        <div>
+                            <h4>Email</h4>
+                            <!-- PLACEHOLDER: Replace with your real email -->
+                            <p>taaha.siddiqui.2@email.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <h4>Location</h4>
+                            <p>Lahore</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📷</div>
+                        <div>
+                            <h4>Available for</h4>
+                            <p>Events · Portraits · Media Leadership</p>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" id="subject" name="subject" placeholder="Subject" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="logo">HS</a>
+                    <p>Humayl Siddiqui · Photographer & Media Enthusiast</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#portfolio">Portfolio</a>
+                    <a href="#experience">Experience</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Humayl Siddiqui. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

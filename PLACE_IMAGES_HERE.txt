@@ -1,0 +1,17 @@
+Put your photography images in this folder.
+
+Suggested filenames (already referenced in the website placeholders):
+
+  hero-bg.jpg          → Hero background (optional)
+  portrait.jpg         → About section portrait
+  event-1.jpg
+  event-2.jpg
+  portrait-1.jpg
+  portrait-2.jpg
+  campus-1.jpg
+  campus-2.jpg
+  creative-1.jpg
+  creative-2.jpg
+
+After adding images, replace the gray dashed placeholders in index.html with <img> tags.
+See README.md for exact instructions.
